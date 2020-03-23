@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>给图片自动戴口罩 &mdash; python-demo-scratch  文档</title>
+  <title>一、给图片自动戴口罩 &mdash; python-demo-scratch  文档</title>
   
 
   
@@ -93,7 +93,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../contents/1-trick.html">有趣的例子</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">给图片自动戴口罩</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">一、给图片自动戴口罩</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">人脸识别</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">图像处理</a></li>
 </ul>
@@ -152,7 +152,7 @@
         
           <li><a href="../contents/1-trick.html">有趣的例子</a> &raquo;</li>
         
-      <li>给图片自动戴口罩</li>
+      <li>一、给图片自动戴口罩</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,17 +172,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>给图片自动戴口罩<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>一、给图片自动戴口罩<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>自1月20日钟南山院士肯定此次新型肺炎存在着人传人的现象起，到今日的武汉封城，我们人民群众也需要提高对此次疫情的重视程度，做好自身的防范工作，平平安安，过个好年。</p>
 <p>尽量少去人群密集的场所，如果非要出门一定要戴上口罩，勤用肥皂和清水或含有酒精的洗手液洗手也是非常有必要的。</p>
 <p>在网络世界中，我们可以通过给头像戴口罩，来呼吁广大群众积极保护自身安全。在这里，我们运用Python简单的几十行代码来实现在社交网络中也给自己的头像自动戴上口罩。</p>
 <p>大致的效果如下：</p>
-<p><img alt="file" src="https://graph.baidu.com/resource/2220d3ec30f65aca2ef6c01579767318.png" /></p>
+<p><img alt="pic" src="https://github.com/librauee/python-demo/blob/master/picture/1-1.png" /></p>
 <p>用到的技术主要有人脸识别（当然，调用了接口）、openCV图像处理这两项。</p>
 <div class="section" id="id2">
 <h2>人脸识别<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>旷视提供了人脸识别的API，输入图片便可以得到人脸的各个稠密关键点的所在位置，通俗来讲，就是勾画出五官。</p>
-<p><img alt="file" src="https://graph.baidu.com/resource/2222a8cd91ebc71cce6f701579767538.png" /></p>
+<p><img alt="pic" src="https://github.com/librauee/python-demo/blob/master/picture/1-2.png" /></p>
 <p>我们通过使用其嘴巴的位置数据，可以定位口罩的佩戴位置。并通过计算人脸嘴巴的大小，自动调整口罩的大小进行适配。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_mouth</span><span class="p">(</span><span class="n">dst_pic</span><span class="p">):</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dst_pic</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
