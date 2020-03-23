@@ -1,0 +1,42 @@
+网络爬虫
+==================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   first
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+数据分析
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+机器学习/深度学习
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+GUI编程
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+关于
+==================
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   test2

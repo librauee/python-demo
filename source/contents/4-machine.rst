@@ -3,13 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Contents
-===============================================
+机器学习/深度学习实战
+=========
+
 
 .. toctree::
    :glob:
 
-   preface
-   contents/*
-   aboutme
+   ../machine/*
 
