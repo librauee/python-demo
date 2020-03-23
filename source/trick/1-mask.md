@@ -10,7 +10,7 @@
 
 大致的效果如下：
 
-![pic](https://github.com/librauee/python-demo/blob/master/picture/1-1.png)
+![pic](../picture/1-1.png)
 
 用到的技术主要有人脸识别（当然，调用了接口）、openCV图像处理这两项。
 
@@ -18,7 +18,7 @@
 
 旷视提供了人脸识别的API，输入图片便可以得到人脸的各个稠密关键点的所在位置，通俗来讲，就是勾画出五官。
 
-![pic](https://github.com/librauee/python-demo/blob/master/picture/1-2.png)
+![pic](../picture/1-2.png)
 
 我们通过使用其嘴巴的位置数据，可以定位口罩的佩戴位置。并通过计算人脸嘴巴的大小，自动调整口罩的大小进行适配。
 
